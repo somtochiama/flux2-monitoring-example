@@ -82,6 +82,7 @@ spec:
                     labelsFromPath:
                       exported_namespace: [metadata, namespace]
                       ready: [status, conditions, "[type=Ready]", status]
+                      branch: [spec, ref, branch]
               - <<: *metric
                 groupVersionKind:
                   group: source.toolkit.fluxcd.io
